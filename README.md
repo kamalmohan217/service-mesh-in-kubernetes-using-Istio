@@ -1,1 +1,1 @@
-# service-mesh-using-Istio
+# service mesh in kubernetes using Istio
