@@ -12,8 +12,8 @@ Istiod imparts service discovery, configuration and certificate management.
 
 ```
 Explanation of different components for istio.
-1. Pilot  Pilot is responsible for traffic management and routing.
-2. Citadel  Citadel is responsible for secure communication between the microservices.
-3. Galley  Galley is responsible for configuration management.
-4. Mixer  Mixer collects telemetry data.
+1. Pilot, Pilot is responsible for traffic management and routing.
+2. Citadel, Citadel is responsible for secure communication between the microservices.
+3. Galley, Galley is responsible for configuration management.
+4. Mixer, Mixer collects telemetry data.
 ```
