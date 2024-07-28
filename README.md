@@ -10,8 +10,10 @@ Istiod imparts service discovery, configuration and certificate management.
 **Architecture diagram for Service mesh using istio is as shown below.**
 ![image](https://github.com/user-attachments/assets/f2ffe416-de03-4c7f-8c25-43fd99ca0c0c)
 
+```
 Explanation of different components for istio.
-**1. Pilot**  Pilot is responsible for traffic management and routing.
-**2. Citadel**  Citadel is responsible for secure communication between the microservices.
-**3. Galley**  Galley is responsible for configuration management.
-**4. Mixer**  Mixer collects telemetry data.
+1. Pilot  Pilot is responsible for traffic management and routing.
+2. Citadel  Citadel is responsible for secure communication between the microservices.
+3. Galley  Galley is responsible for configuration management.
+4. Mixer  Mixer collects telemetry data.
+```
