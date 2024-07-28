@@ -8,7 +8,7 @@ Istiod imparts service discovery, configuration and certificate management. Comm
 
 <br><br/>
 **Architecture diagram for Service mesh using istio is as shown below.**
-![image](https://github.com/user-attachments/assets/44b43b0c-7478-47f0-8ab8-b9dd5b367f52)
+![image](https://github.com/user-attachments/assets/9e49fefa-a407-484e-b79a-7ce3525ff8e5)
 
 ```
 Explanation of different components for istio.
