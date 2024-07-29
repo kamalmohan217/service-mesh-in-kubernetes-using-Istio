@@ -86,3 +86,5 @@ kubectl argo rollouts get rollout productpage-v1 -n microservice --watch
 ```
 ![image](https://github.com/user-attachments/assets/63336b37-f183-43a2-987b-6ffcd48b9e00)
 ![image](https://github.com/user-attachments/assets/6c2524a6-b4d4-4824-ac59-339c58ef6fe1)
+
+![image](https://github.com/user-attachments/assets/66dfb99b-8265-4d44-a6c8-f4b1d58bd55f)
