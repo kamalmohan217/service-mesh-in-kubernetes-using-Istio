@@ -71,6 +71,7 @@ In **canary deployment** a newer version of Application pods will be created, th
 In the Original manifests file as present in the link https://raw.githubusercontent.com/istio/istio/release-1.22/samples/bookinfo/platform/kube/bookinfo.yaml. I did change in productpage-v1 deployment as shown in the screenshot below and updated manifests file is available with this Repository.
 ![image](https://github.com/user-attachments/assets/0f8d5666-26f2-4f16-9191-0231ce6f2cab)
 ![image](https://github.com/user-attachments/assets/d8900bb6-bcb3-4efb-b8a7-a1dcdd92b43d)
+![image](https://github.com/user-attachments/assets/c749e008-cfb8-4721-9fbd-be07595e709e)
 ![image](https://github.com/user-attachments/assets/ee438599-01a7-4955-b977-f5b7897b76ce)
 ![image](https://github.com/user-attachments/assets/f200e45c-ad4b-477b-af46-435b0e6f6f18)
 
