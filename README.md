@@ -20,7 +20,7 @@ Explanation of different components for istio.
 
 For the demonstration purpose I have used the microservice as provided on the Isio site https://istio.io/latest/docs/setup/getting-started/ in the URL https://raw.githubusercontent.com/istio/istio/release-1.22/samples/bookinfo/platform/kube/bookinfo.yaml. Details regarding the microservice is available on https://istio.io/latest/docs/examples/bookinfo/.
 
-I had deployed the microservice on the eks-cluster and eks cluster was created using the terraform script as available with this Repository. Istio is not yet installed on the eks cluster. 
+I had deployed the microservice on the eks-cluster and eks cluster was created using the terraform script as available with the Repository https://github.com/kamalmohan217/terraform-eks-withaddons.git. Istio is not yet installed on the eks cluster. 
 
 As shown in the screenshot below at present only one out of one container is ready. It means sidecar proxy envoy container is not yet created in the pod. As I mentioned I had not installed Istio till now.
 ![image](https://github.com/user-attachments/assets/0d949adf-dee1-420d-ae2a-08c5f63ccb35)
@@ -35,7 +35,7 @@ kubectl label namespace microservice istio-injection=enabled
 Now check the labels using the command as shown below
 kubectl get ns --show-labels
 ```
-Finally you will see two out of two containers are ready as shown in the screenshot below. The second container is for sedecar proxy envoy container. 
+Finally you will see two out of two containers are ready as shown in the screenshot below. The second container is for sidecar proxy envoy container. 
 ![image](https://github.com/user-attachments/assets/da29fa9f-202f-416f-9dd9-c227aa440e26)
 
 You can observe that in namespace istio-system there is a service named as istio-ingressgateway as shown in the screenshot below. Istio ingress gateway provides the similar functionality as that of ingress-controller. In ingress controller you need to create ingress rule however here you need to create gateway as well as virtual service.
