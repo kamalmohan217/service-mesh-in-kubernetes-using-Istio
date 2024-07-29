@@ -63,4 +63,5 @@ To demonstrate canary deployment using Istio I have installed Argo Rollout and d
 ![image](https://github.com/user-attachments/assets/b133ec37-ea01-4260-94d9-eba8920df274)
 ![image](https://github.com/user-attachments/assets/f87460ef-2f06-4e74-8957-16710d401972)
 
+In **canary deployment** a newer version of Application pods will be created, the older version of application is named as stable version and newer version is named as canary version. A certain percentage (weight) of traffic will be routed to the canary version and rest of the traffic will be routed to the stable version and perform the testing with newer version of Application pods. If every thing is fine with newer version of application then perform rollout and move to newer version of applications.
 
