@@ -56,7 +56,7 @@ Screenshot for yaml file to create gateway and virtual service is as shown below
 
 Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgateway service and create the URL and access your application through that URL.
 ![image](https://github.com/user-attachments/assets/203d1ee5-2be5-4475-ae73-1cc13f1b91bb)
-![image](https://github.com/user-attachments/assets/f998d0c1-2c9a-40a4-97c4-ffc41c101d0b)
+![image](https://github.com/user-attachments/assets/0c095a5b-5df1-46f8-9556-7f252d70c8de)
 
 ### Istio supports traffic spliting and hence canary deployment.
 To demonstrate canary deployment using Istio I have installed Argo Rollout and deleted earlier deployment, gateway and virtualservice using the command kubectl delete -f kubernetes-original-manifests.yaml and kubectl delete -f gateway-original.yaml.
