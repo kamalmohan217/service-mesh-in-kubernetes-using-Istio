@@ -1,0 +1,48 @@
+# kubectl create secret tls ecommerce-tls-secret -n istio-system --key mykey.key --cert STAR_singhritesh85_com.crt
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: productpage-gateway
+  namespace: microservice
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - app.singhritesh85.com
+    tls:
+      httpsRedirect: true
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: ecommerce-tls-secret
+    hosts:
+    - app.singhritesh85.com
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: productpage-virtualsvc
+  namespace: microservice
+spec:
+  hosts:
+  - app.singhritesh85.com
+  gateways:
+  - productpage-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        port:
+          number: 9080
+        host: productpage.microservice.svc.cluster.local
