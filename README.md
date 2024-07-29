@@ -54,6 +54,9 @@ Screenshot for yaml file to create gateway and virtual service is as shown below
 ![image](https://github.com/user-attachments/assets/cd0ea360-6acc-489a-95c9-3d15f6850c78)
 ![image](https://github.com/user-attachments/assets/fa8fdcde-d1a0-4181-9122-81e08d35018e)
 
+In above screenshot of gateway you can see the selector which I have used is **istio: ingressgateway** matched with the istio-ingressgateway deployment as shown in the screenshot below. 
+![image](https://github.com/user-attachments/assets/c78d37ef-cfc9-4e28-a97a-cb2f4618afd8)
+
 Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgateway service and create the URL and access your application through that URL.
 ![image](https://github.com/user-attachments/assets/203d1ee5-2be5-4475-ae73-1cc13f1b91bb)
 ![image](https://github.com/user-attachments/assets/0c095a5b-5df1-46f8-9556-7f252d70c8de)
@@ -89,3 +92,7 @@ kubectl argo rollouts get rollout productpage-v1 -n microservice --watch
 ![image](https://github.com/user-attachments/assets/6c2524a6-b4d4-4824-ac59-339c58ef6fe1)
 
 ![image](https://github.com/user-attachments/assets/66dfb99b-8265-4d44-a6c8-f4b1d58bd55f)
+
+You can also perform installation of jaeger, kiali, prometheus and grafana with istio as shown in below screenshots.
+![image](https://github.com/user-attachments/assets/938f9b98-673d-4f78-82e5-efcc5b4e8b2c)
+![image](https://github.com/user-attachments/assets/29c9cb2e-486c-42e9-977d-ce1610acf5d4)
