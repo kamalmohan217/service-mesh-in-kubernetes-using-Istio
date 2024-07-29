@@ -104,7 +104,7 @@ Now create virtualservice for grafana and kiali as shown in the screenshot below
 ![image](https://github.com/user-attachments/assets/13684ee4-c567-42bb-a40b-00c5b705d309)
 ![image](https://github.com/user-attachments/assets/7a591f5f-3abc-488e-b295-78ea94599675)
 
-I have added Destination Rule here as mTLS was enabled and kiali and grfana doesn't have a sidecar container so it is necessary to add destination rule with mTLS disabled as shown in the above screenshot.
+I have added Destination Rule here as mTLS was enabled and kiali and grafana doesn't have a sidecar container so it is necessary to add destination rule with mTLS disabled as shown in the above screenshot.
 <br><br/>
 Finally create the record set in Route53 with DNS Name of the istio-ingressgateway service and access the created URL.
 ![image](https://github.com/user-attachments/assets/795e0d6f-7dfc-4157-b5ea-13461aa51027)
