@@ -60,13 +60,17 @@ Now do the entry in Rout53 to create record set for DNS Name of isto-ingressgate
 
 ### Istio supports traffic spliting and hence canary deployment.
 To demonstrate canary deployment using Istio I have installed Argo Rollout and deleted earlier deployment, gateway and virtualservice using the command kubectl delete -f kubernetes-original-manifests.yaml and kubectl delete -f gateway-original.yaml.
-![image](https://github.com/user-attachments/assets/b133ec37-ea01-4260-94d9-eba8920df274)
+![image](https://github.com/user-attachments/assets/51b88a67-b591-49e0-815d-ac01a52de925)
+
 ![image](https://github.com/user-attachments/assets/f87460ef-2f06-4e74-8957-16710d401972)
 
 In **canary deployment** a newer version of Application pods will be created, the older version of application is named as stable version and newer version is named as canary version. A certain percentage (weight) of traffic will be routed to the canary version and rest of the traffic will be routed to the stable version and perform the testing with newer version of Application pods. If every thing is fine with newer version of application then perform rollout and move to newer version of applications.
 
 In the Original manifests file as present in the link https://raw.githubusercontent.com/istio/istio/release-1.22/samples/bookinfo/platform/kube/bookinfo.yaml. I did change in productpage-v1 deployment as shown in the screenshot below and updated manifests file is available with this Repository.
 ![image](https://github.com/user-attachments/assets/0f8d5666-26f2-4f16-9191-0231ce6f2cab)
+![image](https://github.com/user-attachments/assets/260c5203-1ce7-45ce-8e91-b0a128f19b8e)
+![image](https://github.com/user-attachments/assets/c44b0d60-42ca-474a-be0a-f571b7b0005c)
+![image](https://github.com/user-attachments/assets/6758251f-e83b-4175-b655-39f35fc0254f)
 ![image](https://github.com/user-attachments/assets/d8900bb6-bcb3-4efb-b8a7-a1dcdd92b43d)
 ![image](https://github.com/user-attachments/assets/ee438599-01a7-4955-b977-f5b7897b76ce)
 ![image](https://github.com/user-attachments/assets/f200e45c-ad4b-477b-af46-435b0e6f6f18)
